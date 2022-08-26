@@ -15,9 +15,7 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: space-between;
-    /* position: relative; */
     padding-left: 50px;
-    /* left: 50px; */
     background-color: #FFFFFF;
 }
 header{
@@ -42,7 +40,6 @@ header{
     flex-direction: row;
     list-style: none;
     text-decoration: none;
-    /* margin-right: 10px; */
 }
 .list-item{
     margin-inline-start: 40px;
@@ -78,10 +75,6 @@ header{
 .left >h1{
     font-size: 3.4rem;
     font-weight: 600;
-    /* position: absolute; */
-    /* top: 80px;
-    left: 0;
- */
 }
 .left >p{
     font-size: 1rem;
@@ -96,7 +89,6 @@ header{
     font-weight: 400;
     padding: 14px 25px;
     border-radius: 8px;
-    /* position: absolute; */
     margin-top: 40px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
@@ -124,7 +116,6 @@ header{
     font-weight: 400;
     padding: 14px 30px;
     border-radius: 8px;
-    /* position: absolute; */
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -187,6 +178,14 @@ header{
     font-size: 1rem;
     color: rgb(123, 122, 122);
 }
+.row5-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 10px;
+}
 .row5 ,.row6{
     height: 40vh;
 }
@@ -223,6 +222,7 @@ header{
     padding-bottom: 30px;
     border-radius: 8px;
     background-color: #FFFFFF;
+    margin-bottom: 10px;
 }
 .card2{
     padding-top: 0;
@@ -321,6 +321,11 @@ span{
 }
 .part1 > h1{
     margin-bottom: 20px;
+}
+.ceo-card-container{
+    display: flex;
+    flex-direction: column;
+    /* height: 50vh; */
 }
 .part2{
     margin-bottom: 20px;
@@ -499,9 +504,6 @@ span{
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    /* .row1, .row2, .row3 ,.row4, .row5, .row6, .row7{
-        left: 20px;
-    } */
     .image2{
         width: 500px;
     }
@@ -559,11 +561,54 @@ span{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        margin-top: 100px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .row1 > .left >h1{
+        font-size: 2rem;
+    }
+    .row2 > .right >h1{
+        font-size: 2rem;
     }
     .column{
         padding-left: 10px;
         padding-right: 5px;
         height: 110vh;
+    }
+    .image1{
+        width: 340px;
+    }
+    .image2{
+        width: 380px;
+    }
+    .row2{
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .row4{
+        display: flex;
+        margin-top: 50px;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .row5-container{
+        margin-top: 20px;
+        height: 150vh;
+    }
+    .row5 ,.row6{
+        height: 50vh;
+    }
+    .row7{
+        height: 190vh;
+    }
+    
+}
+@media only screen and (max-width:520px){
+    .row3{
+        display: none;
     }
 }
 @media only screen and (max-width:450px){
@@ -620,8 +665,14 @@ span{
         flex-direction: column;
         margin-top: 20px;
     }
-    .row3{
-        display: none;
+    .column{
+        height: 125vh;
+    }
+    .section{
+        padding-left: 5px;
+    }
+    .reg-btn{
+        margin-top: 7px;
     }
 }
 
